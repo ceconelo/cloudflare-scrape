@@ -400,7 +400,7 @@ class CloudflareScraper(Session):
 
         return (
             {
-                "__cfduid": scraper.cookies.get("__cfduid", "", domain=cookie_domain),
+                "__cfruid": scraper.cookies.get("__cfruid", "", domain=cookie_domain),
                 "cf_clearance": scraper.cookies.get(
                     "cf_clearance", "", domain=cookie_domain
                 ),
